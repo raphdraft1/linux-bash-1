@@ -1,0 +1,24 @@
+#!/bin/bash
+
+function secretgame(){
+echo enter any number
+read number
+
+if [[ ($number -eq 42 || $number -eq 23) ]]
+then
+        echo "congratulations you have won the game"
+else
+        echo "try again"
+fi
+}
+
+echo what is your username
+read username
+echo enter a password
+read password
+
+if [[ ($username == 'admin' && $password == 'admin' ) ]];
+then
+        echo enter the game
+        secretgame
+                                                           
